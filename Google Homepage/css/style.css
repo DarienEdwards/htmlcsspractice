@@ -1,0 +1,129 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: "Roboto", sans-serif;
+     /* background-color: black; */
+     background-color: #101217;
+     color: white;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     
+}
+
+
+.header-container {
+     display: flex;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     align-items: center;
+}
+
+ul li {
+     padding: 3px;
+}
+
+
+
+.header-image {
+     
+     width: 25px;  /* Or use max-width, height, or percentages */
+     height: auto; /* Or set a fixed height */
+    
+}
+
+header ul li:nth-child(2) {
+     margin-right: auto;
+}
+
+.primary-container {
+     width: auto;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     flex-flow: wrap;
+     
+}
+
+.primary-header {
+     font-size: 5rem;
+     width: 100%;
+     text-align: center;
+     padding-top: 5vh;
+
+
+}
+
+
+
+#primary-search {
+     width: 100%;
+     height: 5vh;
+     border-radius: 25px;
+     margin: 0 25%;
+     background-color: #4D5160;
+     color: white;
+}
+
+.search-btns {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+}
+
+.search-btns li {
+     background-color: #4D5160;
+     color: white;
+     text-align: center;
+     height: 3vh;
+     width: 8vw;
+}
+
+footer {
+     background-color: #1F2127;
+     color: white;
+     width: 100vw;
+     height: 10vh;
+     margin-bottom: auto;
+}
+
+.footer-container {
+     display: flex;
+     justify-content: space-between;
+     flex-flow: wrap;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+ul {
+     list-style: none;
+}
